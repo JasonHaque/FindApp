@@ -69,3 +69,20 @@ function signUp(){
     // ...
   });
 }
+
+function search(){
+  var db=firebase.firestore();
+  para = document.getElementById("App_rating");
+  search_term = document.getElementById("search_field").value;
+  db.collection('App').where("Name", "==", search_term).get().
+  then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+        console.log(doc.data());
+        var dat = doc.data();
+        console.log(dat.Rating);
+        para.innerHTML=""+doc.id +"----->"+dat.Rating;
+    });
+});
+}

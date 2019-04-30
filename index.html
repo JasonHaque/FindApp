@@ -18,6 +18,9 @@
   <div id="user_div" class="loggedin-div">
     <h3>Welcome User</h3>
     <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <input type="text" placeholder="Search Here ...." id="search_field"/>
+    <button onclick="search()">Search</button>
+    <p id="App_rating"></p>
     <button onclick="logout()">Logout</button>
   </div>
 
@@ -33,6 +36,7 @@
 
 
   <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+  
   <script>
       // Initialize Firebase
       var config = {
@@ -45,6 +49,9 @@
       };
       firebase.initializeApp(config);
   </script>
+  
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase-firestore.js"></script>
+    
   <script src="index.js"></script>
 
 </body>

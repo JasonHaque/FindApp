@@ -19,7 +19,7 @@ body {
     display: none;
   }
   
-  .main-div input , .signUP input {
+  .main-div input , .signUP input ,.loggedin-div input{
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
