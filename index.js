@@ -79,6 +79,11 @@ function searchview(){
   document.getElementById("login_div").style.display = "none";
   document.getElementById("sign_up").style.display = "none";
   document.getElementById("searchDiv").style.display="block";
+  document.getElementById("back-search").style.display="none";
+  document.getElementById("search-btn").style.display="block";
+  document.getElementById("back-user").style.display="block";
+  para = document.getElementById("App_rating");
+  para.innerHTML="";
 }
 
 function search(){
@@ -95,6 +100,7 @@ function search(){
         console.log(dat.Rating);
         para.innerHTML="App Name "+doc.id +"<br> App Info: "+dat.Review+" <br> Rating----->"+dat.Rating;
     });
+    searchResultView();
 });
 }
 
@@ -105,4 +111,10 @@ function userView(){
   document.getElementById("searchDiv").style.display="none";
   para = document.getElementById("App_rating");
   para.innerHTML="";
+}
+
+function searchResultView(){
+  document.getElementById("search-btn").style.display="none";
+  document.getElementById("back-user").style.display="none";
+  document.getElementById("back-search").style.display="block";
 }
