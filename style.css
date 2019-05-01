@@ -34,7 +34,7 @@ header .logo{
     font-weight: 700;
   }
   
-  .main-div, .loggedin-div , .signUp {
+  .main-div, .loggedin-div , .signUp ,.searchDiv{
     color: #fff;
     width: 20%;
     margin: 0px auto;
@@ -43,7 +43,7 @@ header .logo{
     display: none;
   }
   
-  .main-div input , .signUP input ,.loggedin-div input{
+  .main-div input , .signUP input ,.loggedin-div input ,.searchDiv input{
     display: block;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -61,7 +61,7 @@ header .logo{
     border: 1px solid #777;
   }
   
-  .main-div button, .loggedin-div button, .signUP button {
+  .main-div button, .loggedin-div button, .signUP button , .searchDiv button{
     background: #5d8ffc;
     color: #fff;
     border: 1px solid #5d8ffc;
@@ -75,7 +75,7 @@ header .logo{
     -moz-transition: 0.3s;
   }
   
-  .main-div button:hover, .loggedin-div button:hover , .signUP button:hover {
+  .main-div button:hover, .loggedin-div button:hover , .signUP button:hover , .searchDiv button:hover {
     background: #fff;
     color: #5d8ffc;
     border: 1px solid #5d8ffc;

@@ -19,10 +19,17 @@
   <div id="user_div" class="loggedin-div">
     <h3>Welcome User</h3>
     <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    
+    <button onclick="searchview()"> Go toSearch</button>
+    
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <div id="searchDiv"class="searchDiv">
     <input type="text" placeholder="Search Here ...." id="search_field"/>
     <button onclick="search()">Search</button>
     <p id="App_rating"></p>
-    <button onclick="logout()">Logout</button>
+    <button onclick="userView()">Go to profile</button>
   </div>
 
   <div id ="sign_up" class ="signUp">
