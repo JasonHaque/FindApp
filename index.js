@@ -90,7 +90,7 @@ function search(){
   var db=firebase.firestore();
   para = document.getElementById("App_rating");
   search_term = document.getElementById("search_field").value;
-  db.collection('App').where("Name", "==", search_term).get().
+  db.collection('App').where("App Name", "==", search_term).get().
   then(function(querySnapshot) {
     querySnapshot.forEach(function(doc) {
         // doc.data() is never undefined for query doc snapshots
@@ -98,7 +98,7 @@ function search(){
         console.log(doc.data());
         var dat = doc.data();
         console.log(dat.Rating);
-        para.innerHTML="App Name "+doc.id +"<br> App Info: "+dat.Review+" <br> Rating----->"+dat.Rating;
+        para.innerHTML="App Name "+doc.id +"<br> App Info: "+dat.Description+" <br> Rating----->"+dat.Rating+"<br> App Review: "+dat.Review;
     });
     searchResultView();
 });
