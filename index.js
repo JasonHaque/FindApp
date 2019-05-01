@@ -73,20 +73,14 @@ function signUp(){
     // ...
   });
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> d444b0208eee44d7039685a65787159690915a90
 function searchview(){
   document.getElementById("user_div").style.display = "none";
   document.getElementById("login_div").style.display = "none";
   document.getElementById("sign_up").style.display = "none";
   document.getElementById("searchDiv").style.display="block";
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> d444b0208eee44d7039685a65787159690915a90
 function search(){
   var db=firebase.firestore();
   para = document.getElementById("App_rating");
