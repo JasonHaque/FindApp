@@ -35,7 +35,11 @@ header .logo{
     font-weight: 700;
   }
   
+<<<<<<< HEAD
   .main-div, .loggedin-div , .signUp,.searchDiv {
+=======
+  .main-div, .loggedin-div , .signUp ,.searchDiv{
+>>>>>>> d444b0208eee44d7039685a65787159690915a90
     color: #fff;
     background-color: rgba(0,0,0,0.6);
     width: 23%;
@@ -78,7 +82,11 @@ header .logo{
     -moz-transition: 0.3s;
   }
   
+<<<<<<< HEAD
   .main-div button:hover, .loggedin-div button:hover , .signUP button:hover , .searchDiv button:hover{
+=======
+  .main-div button:hover, .loggedin-div button:hover , .signUP button:hover , .searchDiv button:hover {
+>>>>>>> d444b0208eee44d7039685a65787159690915a90
     background: #fff;
     color: #5d8ffc;
     border: 1px solid #5d8ffc;
