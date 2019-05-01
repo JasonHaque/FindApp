@@ -82,7 +82,7 @@ function search(){
         console.log(doc.data());
         var dat = doc.data();
         console.log(dat.Rating);
-        para.innerHTML=""+doc.id +"----->"+dat.Rating;
+        para.innerHTML="App Name "+doc.id +"<br> App Info: "+dat.Review+" <br> Rating----->"+dat.Rating;
     });
 });
 }
