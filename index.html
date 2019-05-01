@@ -9,24 +9,35 @@
          <div class="logo">Find App</div>
   </header>
   <div id="login_div" class="main-div">
+    <label for="username" class="uname"> Your Email </label>
     <input type="email" placeholder="Email..." id="email_field" />
+    <label for="password" class="youpasswd"> Your Password </label>
     <input type="password" placeholder="Password..." id="password_field" />
 
     <button onclick="login()">Login to Account</button>
-    <button onclick="signupview()"> register</button>
+    <button onclick="signupview()"> Register</button>
   </div>
 
   <div id="user_div" class="loggedin-div">
     <h3>Welcome User</h3>
     <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
-    <input type="text" placeholder="Search Here ...." id="search_field"/>
-    <button onclick="search()">Search</button>
-    <p id="App_rating"></p>
+    
+    <button onclick="searchview()"> Go toSearch</button>
+    
     <button onclick="logout()">Logout</button>
   </div>
 
+  <div id="searchDiv"class="searchDiv">
+    <input type="text" placeholder="Search Here ...." id="search_field"/>
+    <button onclick="search()">Search</button>
+    <p id="App_rating"></p>
+    <button onclick="userView()">Go to profile</button>
+  </div>
+
   <div id ="sign_up" class ="signUp">
+    <label for="username" class="uname"> Your Email </label>
     <input type="email" placeholder="Email..." id="sign_email_field" />
+    <label for="password" class="youpasswd"> Your Password </label>
     <input type="password" placeholder="Password..." id="sign_password_field" />
 
     <button onclick="signUp()">Sign Up to Account</button>

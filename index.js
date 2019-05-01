@@ -5,6 +5,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("user_div").style.display = "block";
     document.getElementById("login_div").style.display = "none";
     document.getElementById("sign_up").style.display = "none";
+    document.getElementById("searchDiv").style.display="none";
 
     var user = firebase.auth().currentUser;
 
@@ -21,6 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.getElementById("user_div").style.display = "none";
     document.getElementById("login_div").style.display = "block";
     document.getElementById("sign_up").style.display = "none";
+    document.getElementById("searchDiv").style.display="none";
   }
 });
 
@@ -44,12 +46,14 @@ function signupview(){
   document.getElementById("user_div").style.display = "none";
   document.getElementById("login_div").style.display = "none";
   document.getElementById("sign_up").style.display = "block";
+  document.getElementById("searchDiv").style.display="none";
 }
 
 function loginview(){
   document.getElementById("user_div").style.display = "none";
   document.getElementById("login_div").style.display = "block";
   document.getElementById("sign_up").style.display = "none";
+  document.getElementById("searchDiv").style.display="none";
 }
 function logout(){
   firebase.auth().signOut();
@@ -70,6 +74,13 @@ function signUp(){
   });
 }
 
+function searchview(){
+  document.getElementById("user_div").style.display = "none";
+  document.getElementById("login_div").style.display = "none";
+  document.getElementById("sign_up").style.display = "none";
+  document.getElementById("searchDiv").style.display="block";
+}
+
 function search(){
   var db=firebase.firestore();
   para = document.getElementById("App_rating");
@@ -85,4 +96,13 @@ function search(){
         para.innerHTML="App Name "+doc.id +"<br> App Info: "+dat.Review+" <br> Rating----->"+dat.Rating;
     });
 });
+}
+
+function userView(){
+  document.getElementById("user_div").style.display = "block";
+  document.getElementById("login_div").style.display = "none";
+  document.getElementById("sign_up").style.display = "none";
+  document.getElementById("searchDiv").style.display="none";
+  para = document.getElementById("App_rating");
+  para.innerHTML="";
 }
