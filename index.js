@@ -101,4 +101,6 @@ function userView(){
   document.getElementById("login_div").style.display = "none";
   document.getElementById("sign_up").style.display = "none";
   document.getElementById("searchDiv").style.display="none";
+  para = document.getElementById("App_rating");
+  para.innerHTML="";
 }
