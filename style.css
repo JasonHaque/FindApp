@@ -1,20 +1,44 @@
 body {
-    background: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(1.jpg);
+    height: 100vh;  /* <!100%>background image styles are given here*/
+    background-size: cover;
     padding: 0px;
     margin: 0px;
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
   }
+
+header{
+  position: absolute;
+  top: 0;/*header style as logo and navigation bar background style*/
+  left: 0;
+  padding: 30px 60px;
+  background: #081551;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
   
+header .logo{
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  height: 50px;
+  line-height: 50px;
+  font-size: 45px;
+  float: left;
+  font-weight: bold;
+}
+
   input, button {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
   }
   
   .main-div, .loggedin-div , .signUp {
+    color: #fff;
     width: 20%;
     margin: 0px auto;
-    margin-top: 150px;
+    margin-top: 230px;
     padding: 20px;
     display: none;
   }
@@ -27,7 +51,7 @@ body {
     padding: 15px;
     outline: none;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -57,4 +81,4 @@ body {
     border: 1px solid #5d8ffc;
     cursor: pointer;
   }
-  
+
